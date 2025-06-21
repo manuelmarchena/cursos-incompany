@@ -1,26 +1,29 @@
+(()=>{
 
-const msg: string = 'Hola mundo';
+    const msg: string = 'Hola mundo';
 
-const hero = {
-    name: 'Ironman',
-    age: 45
-}
+    const hero = {
+        name: 'Ironman',
+        age: 45
+    }
 
-hero.age = 50
-console.log(msg);
-console.log(hero.age + 1)
+    hero.age = 50
+    console.log(msg);
+    console.log(hero.age + 1)
 
 
 
-function sayHello(msg: string){
-    console.log(msg)
-    
-}
+    function sayHello(msg: string){
+        console.log(msg)
+        
+    }
 
-(() =>{
-    
-    const a: number = 10
-    
-    console.log(a)
+    (() =>{
+        
+        const a: number = 10
+        
+        console.log(a)
+
+    })()
 
 })()
