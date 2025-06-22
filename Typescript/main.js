@@ -1,41 +1,84 @@
 "use strict";
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
+const conducirBatimovil = (auto) => {
+    auto.encender = true;
+    auto.velocidadMaxima = 100;
+    auto.acelear();
 };
+const batimovil = {
+    encender: false,
+    velocidadMaxima: 0,
+    acelear() {
+        console.log("...... gogogo!!!");
+    }
+};
+const guason = {
+    reir: true,
+    comer: true,
+    llorar: false
+};
+const reir = (guason) => {
+    if (guason.reir) {
+        console.log("JAJAJAJA");
+    }
+};
+const ciudadGotica = (ciudadanos) => {
+    return ciudadanos.length;
+};
+class Persona {
+    imprimirBio() { }
+}
 (() => {
-    const avengers = {
-        nick: 'Samuel L. Jackson',
-        ironman: 'Robert Downey Jr.',
-        vision: 'Paul Bettany',
-        activos: true,
-        poder: 1500.123424
+    let flash = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: ['Súper velocidad', 'Viajar en el tiempo']
     };
-    const printAvenger = (_a) => {
-        var { vision } = _a, resto = __rest(_a, ["vision"]);
-        console.log(vision, resto);
+    let superman = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: ['Súper velocidad', 'Viajar en el tiempo'],
+        getName() {
+            return this.name;
+        }
     };
-    printAvenger(avengers);
-    const avengersArr = ['Cap. America', 'Ironman', 'Hulk'];
-    const [, ironman,] = avengersArr;
-    console.log(ironman);
-    const [, a,] = avengersArr;
-    console.log({ a });
-    const [b,] = avengersArr;
-    console.log({ b });
-    const [, , c] = avengersArr;
-    console.log({ c });
-    const avArr = ['Cap. América', true, 15.15];
-    const [capitan, iron, seriaUnNumero] = avArr;
-    console.log({ iron, capitan });
 })();
 (() => {
+    class Mutant {
+        mutantPower(id) {
+            return this.name + ' ' + this.realName;
+        }
+    }
+})();
+(() => {
+    const client1 = {
+        name: 'Barry Allen',
+        age: 24,
+        address: {
+            id: 100,
+            zip: 'YVEKE - 123',
+            city: 'Viajar en el tiempo'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+    const client2 = {
+        name: 'Manuel',
+        age: 37,
+        address: {
+            id: 1,
+            zip: 'VE 5001',
+            city: 'San Cristóbal'
+        },
+        getFullAddress(id) {
+            return this.address.city;
+        }
+    };
+})();
+(() => {
+    let addTwoNumbersFunction;
+    addTwoNumbersFunction = (a, b) => {
+        return 10;
+    };
 })();
 //# sourceMappingURL=main.js.map
